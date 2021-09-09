@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cl1:#F7F6F2;
+    --cl2:#C8C6C6;
+    --cl3:#152D35;
+}
+.top{
+    margin: 0vh 10vw;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+.top img{
+    height: 60px;
+    width: 200px;
+}
+header{
+    background-color: var(--cl2);
+}
+/* styling search bar */
+.search input[type=text]{
+    width:40vw;
+    height:3vh;
+    border-radius:5px;
+    border: none;
+
+    margin-left: 10vw;
+    padding: 8px 10px;
+    overflow: auto;
+    font-size: 18px;
+}
+      
+.search{
+    float:right;
+    margin:7px;
+}
+      
+.search button{
+    border-radius: 5px;
+    background-color: var(--cl1);
+    color: var(--cl3);
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    width: 3vw;
+    padding-bottom: 13px;
+}
+.search button:hover{
+    background-color: var(--cl3);
+    color: var(--cl1);
+    transition: .5s;
+}
+nav{
+    background-color: var(--cl3);
+    height: 48px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 120px 190px 230px 100px;
+    gap: 0;
+    list-style: none;
+    padding: 10px 10vw;
+}
+nav ul li a{
+    color: var(--cl1);
+    font-size: 26px;
+    text-decoration: none;
+    padding: 10px 1vw;
+}
+nav ul li :hover{
+    background-color: var(--cl1);
+    color: var(--cl3);
+    transition: .5s;
+}
+.body{
+    height: auto;
+    width: auto;
+    padding: 0vh 8vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.body-left{
+    display: grid;
+    grid-template-rows: 370px 370px 370px 370px;
+}
+.body-left div{
+    overflow: hidden;
+    box-shadow: 0px 5px 5px 0px gray, 0px 10px 15px 0px gray;
+    height: 360px;
+    width: 370px;
+}
+.body-left img{
+    overflow: hidden;
+    height: 360px;
+    width: 370px;
+}
+.body-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    place-items: center;
+    
+}
+.body-right div{
+    overflow: hidden;
+    box-shadow: 0px 5px 5px 0px gray, 0px 10px 15px 0px gray;
+    height: 400px;
+    width: 370px;
+}
+.body-right img{
+    overflow: hidden;
+    height: 360px;
+    width: 370px;
+}
+.body-right div p{
+    overflow: hidden;
+    box-shadow: 0px 5px 5px 0px gray, 0px 10px 15px 0px gray;
+    height: 40px;
+    width: 370px;
+    text-align: center;
+    padding: 6px 0px 0px 0px;
+    background-color: var(--cl3);
+    color: var(--cl1);
+}
+.body-right div p:hover{
+    background-color: var(--cl2);
+    color: var(--cl3);
+}
